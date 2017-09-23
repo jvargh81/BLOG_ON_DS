@@ -76,11 +76,13 @@ g<-ggplot()+
 ** We can also do similar using the bar graph **
 
 ```{r}
-b<-ggplot(data=HR_vs_SO,aes(x=career_SO,y=career_HR,tooltip=nameLast))+
+g<-ggplot(data=HR_vs_SO,aes(x=career_SO,y=career_HR,tooltip=nameLast))+
   geom_bar(stat = "identity", width = 10, color = "Black")+
   ggtitle("career home runs vs strike outs for great hitlers.")+
   xlab("career strikeouts")+
   ylab("career Homeruns")
+
+ggiraph(code=print(g),hover_css="Fill:white;stroke:blue")
 ```
 
 
