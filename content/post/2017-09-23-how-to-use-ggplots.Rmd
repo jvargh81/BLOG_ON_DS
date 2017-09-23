@@ -1,0 +1,20 @@
+---
+title: How to use GGplots
+author: Jerrin Varghese
+date: '2017-09-23'
+image: "public/images/1.jpg"
+slug: How-to-use-ggplots
+categories: [Data visualization]
+tags: [ggplot,ggiraph]
+weight: 10
+draft: false
+---
+
+
+ <img src="images/2.jpg" width="300"/>
+ 
+#### Data visualization using ggplot and ggiraph.
+
+_Using ggplot, we can display the data using graphs. This helps us to 
+visualise the data._
+
