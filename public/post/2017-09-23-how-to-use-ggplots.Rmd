@@ -18,3 +18,67 @@ draft: false
 _Using ggplot, we can display the data using graphs. This helps us to 
 visualise the data._
 
+ **Let's inherit some libraries to start with**
+ 
+ 
+```{r message=FALSE, warning=FALSE}
+library(dplyr)
+library(Lahman) 
+library(devtools)
+library(blogdown)
+library(ggplot2)
+library(ggiraph)
+
+
+
+```
+
+
+
+** Adding a table for players with career Home run more than 400 **
+
+```{r}
+df<-Batting%>%
+  group_by(playerID)%>%
+  summarize(career_HR=sum(HR),career_SO=sum(SO))%>%
+  filter(career_HR >= 400)
+```
+
+
+
+** We will now add first and last name of players instead of playerID **
+
+```{r}
+HR_vs_SO<-inner_join(df,Master,by=c("playerID"))%>%
+  select(nameFirst,nameLast,career_HR,career_SO)
+```
+
+** Here we have first and last name, we can use paste 
+   command to join both last name and first name **
+
+```{r}
+HR_vs_SO$name<-paste(HR_vs_SO$nameFirst,HR_vs_SO$nameLast)
+
+```
+
+** Now using ggplot we can plot the graph for the table we generated **
+
+```{r}
+g<-ggplot()+
+  geom_point_interactive(data=HR_vs_SO,aes(x=career_SO,y=career_HR,tooltip=nameLast,data_id=nameLast))+
+  ggtitle("career home runs vs strike outs for great hitlers.")+
+  xlab("career strikeouts")+
+  ylab("career Homeruns")
+  
+  ggiraph(code=print(g),hover_css="Fill:white;stroke:blue")
+```
+
+
+
+
+
+
+
+
+
+
