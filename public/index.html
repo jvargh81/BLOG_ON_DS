@@ -38,6 +38,8 @@
                 
                   <li><a href="#2017-09-23-how-to-use-ggplots">How to use GGplots</a></li>
                 
+                  <li><a href="#2017-09-23-dplyr">Dplyr</a></li>
+                
               </ul>
             </nav>
           </header>
@@ -52,7 +54,7 @@
 <script src="/rmarkdown-libs/d3-lasso/d3-lasso.min.js"></script>
 <link href="/rmarkdown-libs/ggiraph/styles.css" rel="stylesheet" />
 <script src="/rmarkdown-libs/ggiraph-binding/ggiraph.js"></script>
-<script src="/rmarkdown-libs/uid092db684a02311e7a59d9de5e015b396/scripts_uid092db684a02311e7a59d9de5e015b396.js"></script>
+<script src="/rmarkdown-libs/uid034fc682a02b11e7ba6161faf1aa68a1/scripts_uid034fc682a02b11e7ba6161faf1aa68a1.js"></script>
 
 
 <p><img src="images/2.jpg" width="300"/></p>
@@ -85,7 +87,394 @@ library(ggiraph)</code></pre>
   
   ggiraph(code=print(g),hover_css=&quot;Fill:white;stroke:blue&quot;)</code></pre>
 <div id="htmlwidget-1" style="width:672px;height:480px;" class="ggiraph html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1">{"x":{"html":"<div id='uid092db684a02311e7a59d9de5e015b396' class='ggiraph-container' ><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"svg_1\" viewBox=\"0 0 432.00 432.00\" class=\"svg-responsive-container\">\n  <g>\n    <defs>\n      <clipPath id=\"cl1_0\">\n        <rect x=\"0.00\" y=\"432.00\" width=\"0.00\" height=\"0.00\"/>\n      <\/clipPath>\n    <\/defs>\n    <rect x=\"0.00\" y=\"0.00\" width=\"432.00\" height=\"432.00\" id=\"1\" clip-path=\"url(#cl1_0)\" fill=\"#FFFFFF\" fill-opacity=\"1\" stroke-width=\"0.75\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <defs>\n      <clipPath id=\"cl1_1\">\n        <rect x=\"0.00\" y=\"0.00\" width=\"432.00\" height=\"432.00\"/>\n      <\/clipPath>\n    <\/defs>\n    <rect x=\"0.00\" y=\"0.00\" width=\"432.00\" height=\"432.00\" id=\"2\" clip-path=\"url(#cl1_1)\" fill=\"#FFFFFF\" fill-opacity=\"1\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <defs>\n      <clipPath id=\"cl1_2\">\n        <rect x=\"38.92\" y=\"23.90\" width=\"387.60\" height=\"377.76\"/>\n      <\/clipPath>\n    <\/defs>\n    <rect x=\"38.92\" y=\"23.90\" width=\"387.60\" height=\"377.76\" id=\"3\" clip-path=\"url(#cl1_2)\" fill=\"#EBEBEB\" fill-opacity=\"1\" stroke=\"none\"/>\n    <polyline points=\"38.92,342.89 426.52,342.89\" id=\"4\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,246.15 426.52,246.15\" id=\"5\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,149.41 426.52,149.41\" id=\"6\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,52.68 426.52,52.68\" id=\"7\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"66.55,401.66 66.55,23.90\" id=\"8\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"159.23,401.66 159.23,23.90\" id=\"9\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"251.91,401.66 251.91,23.90\" id=\"10\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"344.58,401.66 344.58,23.90\" id=\"11\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,391.26 426.52,391.26\" id=\"12\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,294.52 426.52,294.52\" id=\"13\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,197.78 426.52,197.78\" id=\"14\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,101.05 426.52,101.05\" id=\"15\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"112.89,401.66 112.89,23.90\" id=\"16\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"205.57,401.66 205.57,23.90\" id=\"17\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"298.24,401.66 298.24,23.90\" id=\"18\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"390.92,401.66 390.92,23.90\" id=\"19\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <circle cx=\"183.88\" cy=\"47.84\" r=\"1.47pt\" id=\"20\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"216.32\" cy=\"343.86\" r=\"1.47pt\" id=\"21\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"156.63\" cy=\"282.91\" r=\"1.47pt\" id=\"22\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"221.14\" cy=\"347.73\" r=\"1.47pt\" id=\"23\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"241.34\" cy=\"370.94\" r=\"1.47pt\" id=\"24\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"212.80\" cy=\"41.07\" r=\"1.47pt\" id=\"25\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"208.53\" cy=\"346.76\" r=\"1.47pt\" id=\"26\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"287.49\" cy=\"331.28\" r=\"1.47pt\" id=\"27\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"207.23\" cy=\"354.50\" r=\"1.47pt\" id=\"28\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"250.98\" cy=\"320.64\" r=\"1.47pt\" id=\"29\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"368.49\" cy=\"331.28\" r=\"1.47pt\" id=\"30\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"188.88\" cy=\"377.71\" r=\"1.47pt\" id=\"31\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"170.53\" cy=\"261.63\" r=\"1.47pt\" id=\"32\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"73.96\" cy=\"301.29\" r=\"1.47pt\" id=\"33\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"218.91\" cy=\"352.56\" r=\"1.47pt\" id=\"34\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"163.49\" cy=\"358.37\" r=\"1.47pt\" id=\"35\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"257.28\" cy=\"168.76\" r=\"1.47pt\" id=\"36\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"110.11\" cy=\"343.86\" r=\"1.47pt\" id=\"37\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"408.90\" cy=\"233.58\" r=\"1.47pt\" id=\"38\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"251.54\" cy=\"358.37\" r=\"1.47pt\" id=\"39\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"188.70\" cy=\"325.48\" r=\"1.47pt\" id=\"40\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"242.45\" cy=\"223.90\" r=\"1.47pt\" id=\"41\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"264.14\" cy=\"350.63\" r=\"1.47pt\" id=\"42\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"185.36\" cy=\"353.53\" r=\"1.47pt\" id=\"43\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"244.49\" cy=\"259.69\" r=\"1.47pt\" id=\"44\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"203.16\" cy=\"282.91\" r=\"1.47pt\" id=\"45\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"210.39\" cy=\"139.74\" r=\"1.47pt\" id=\"46\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"214.83\" cy=\"274.21\" r=\"1.47pt\" id=\"47\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"276.37\" cy=\"301.29\" r=\"1.47pt\" id=\"48\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"223.36\" cy=\"214.23\" r=\"1.47pt\" id=\"49\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"208.53\" cy=\"290.65\" r=\"1.47pt\" id=\"50\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"56.54\" cy=\"318.70\" r=\"1.47pt\" id=\"51\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"251.91\" cy=\"254.86\" r=\"1.47pt\" id=\"52\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"93.61\" cy=\"283.88\" r=\"1.47pt\" id=\"53\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"177.39\" cy=\"227.77\" r=\"1.47pt\" id=\"54\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"133.83\" cy=\"365.14\" r=\"1.47pt\" id=\"55\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"122.71\" cy=\"206.49\" r=\"1.47pt\" id=\"56\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"263.58\" cy=\"241.31\" r=\"1.47pt\" id=\"57\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"169.42\" cy=\"361.27\" r=\"1.47pt\" id=\"58\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"211.50\" cy=\"211.33\" r=\"1.47pt\" id=\"59\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"351.44\" cy=\"104.92\" r=\"1.47pt\" id=\"60\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"174.06\" cy=\"87.50\" r=\"1.47pt\" id=\"61\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"276.56\" cy=\"248.09\" r=\"1.47pt\" id=\"62\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"144.58\" cy=\"285.81\" r=\"1.47pt\" id=\"63\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"156.82\" cy=\"384.49\" r=\"1.47pt\" id=\"64\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"261.73\" cy=\"379.65\" r=\"1.47pt\" id=\"65\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"354.96\" cy=\"189.08\" r=\"1.47pt\" id=\"66\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"286.38\" cy=\"318.70\" r=\"1.47pt\" id=\"67\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"194.63\" cy=\"382.55\" r=\"1.47pt\" id=\"68\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"186.47\" cy=\"274.21\" r=\"1.47pt\" id=\"69\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"399.82\" cy=\"186.17\" r=\"1.47pt\" id=\"70\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"121.41\" cy=\"366.11\" r=\"1.47pt\" id=\"71\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"58.95\" cy=\"274.21\" r=\"1.47pt\" id=\"72\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"240.04\" cy=\"328.38\" r=\"1.47pt\" id=\"73\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"185.73\" cy=\"340.95\" r=\"1.47pt\" id=\"74\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <defs>\n      <clipPath id=\"cl1_3\">\n        <rect x=\"0.00\" y=\"0.00\" width=\"432.00\" height=\"432.00\"/>\n      <\/clipPath>\n    <\/defs>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"18.97\" y=\"394.48\" id=\"75\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">400<\/text>\n    <\/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"18.97\" y=\"297.74\" id=\"76\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">500<\/text>\n    <\/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"18.97\" y=\"201.00\" id=\"77\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">600<\/text>\n    <\/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"18.97\" y=\"104.27\" id=\"78\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">700<\/text>\n    <\/g>\n    <polyline points=\"36.18,391.26 38.92,391.26\" id=\"79\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"36.18,294.52 38.92,294.52\" id=\"80\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"36.18,197.78 38.92,197.78\" id=\"81\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"36.18,101.05 38.92,101.05\" id=\"82\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"112.89,404.40 112.89,401.66\" id=\"83\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"205.57,404.40 205.57,401.66\" id=\"84\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"298.24,404.40 298.24,401.66\" id=\"85\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"390.92,404.40 390.92,401.66\" id=\"86\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"102.88\" y=\"413.03\" id=\"87\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">1000<\/text>\n    <\/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"195.56\" y=\"413.03\" id=\"88\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">1500<\/text>\n    <\/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"288.23\" y=\"413.03\" id=\"89\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">2000<\/text>\n    <\/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"380.91\" y=\"413.03\" id=\"90\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">2500<\/text>\n    <\/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"192.07\" y=\"426.38\" id=\"91\" font-size=\"8.25pt\" font-family=\"Arial\">career strikeouts<\/text>\n    <\/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text transform=\"translate(13.35,255.27) rotate(-90)\" id=\"92\" font-size=\"8.25pt\" font-family=\"Arial\">career Homeruns<\/text>\n    <\/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"38.92\" y=\"14.79\" id=\"93\" font-size=\"9.90pt\" font-family=\"Arial\">career home runs vs strike outs for great hitlers.<\/text>\n    <\/g>\n  <\/g>\n<\/svg>\n<div class='ggiraph-toolbar'><div class='ggiraph-toolbar-block shinyonly'><a class='ggiraph-toolbar-icon neutral' title='lasso selection' href='javascript:lasso_on(\"uid092db684a02311e7a59d9de5e015b396\", true, \"array_selected_uid092db684a02311e7a59d9de5e015b396\", \"clicked_uid092db684a02311e7a59d9de5e015b396\");'><svg width='1.5em' height='1.5em' viewBox='0 0 230 230'><g><ellipse ry='65.5' rx='86.5' cy='94' cx='115.5' stroke-width='20' fill='transparent'/><ellipse ry='11.500001' rx='10.5' cy='153' cx='91.5' stroke-width='20' fill='transparent'/><line y2='210.5' x2='105' y1='164.5' x1='96' stroke-width='20'/><\/g><\/svg><\/a><a class='ggiraph-toolbar-icon drop' title='lasso anti-selection' href='javascript:lasso_on(\"uid092db684a02311e7a59d9de5e015b396\", false, \"array_selected_uid092db684a02311e7a59d9de5e015b396\", \"clicked_uid092db684a02311e7a59d9de5e015b396\");'><svg width='1.5em' height='1.5em' viewBox='0 0 230 230'><g><ellipse ry='65.5' rx='86.5' cy='94' cx='115.5' stroke-width='20' fill='transparent'/><ellipse ry='11.500001' rx='10.5' cy='153' cx='91.5' stroke-width='20' fill='transparent'/><line y2='210.5' x2='105' y1='164.5' x1='96' stroke-width='20'/><\/g><\/svg><\/a><\/div><\/div><style>div.tooltip_uid092db684a02311e7a59d9de5e015b396 {position:absolute;pointer-events:none;z-index:999;padding:5px;background:black;color:white;border-radius:2px 2px 2px 2px;}\n.cl_data_id_uid092db684a02311e7a59d9de5e015b396:{}.cl_data_id_uid092db684a02311e7a59d9de5e015b396:hover{Fill:white;stroke:blue}\n.clicked_uid092db684a02311e7a59d9de5e015b396{Fill:white;stroke:blue}<\/style><\/div>","uid":"uid092db684a02311e7a59d9de5e015b396","funname":"init_prop_uid092db684a02311e7a59d9de5e015b396","sel_array_name":"array_selected_uid092db684a02311e7a59d9de5e015b396","selected_class":"clicked_uid092db684a02311e7a59d9de5e015b396","tooltip_opacity":0.9,"tooltip_offx":10,"tooltip_offy":0,"zoom_max":1,"use_wh":false,"width":"80%","selection_type":"multiple","flexdashboard":false},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"html":"<div id='uid034fc682a02b11e7ba6161faf1aa68a1' class='ggiraph-container' ><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"svg_1\" viewBox=\"0 0 432.00 432.00\" class=\"svg-responsive-container\">\n  <g>\n    <defs>\n      <clipPath id=\"cl1_0\">\n        <rect x=\"0.00\" y=\"432.00\" width=\"0.00\" height=\"0.00\"/>\n      <\/clipPath>\n    <\/defs>\n    <rect x=\"0.00\" y=\"0.00\" width=\"432.00\" height=\"432.00\" id=\"1\" clip-path=\"url(#cl1_0)\" fill=\"#FFFFFF\" fill-opacity=\"1\" stroke-width=\"0.75\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <defs>\n      <clipPath id=\"cl1_1\">\n        <rect x=\"0.00\" y=\"0.00\" width=\"432.00\" height=\"432.00\"/>\n      <\/clipPath>\n    <\/defs>\n    <rect x=\"0.00\" y=\"0.00\" width=\"432.00\" height=\"432.00\" id=\"2\" clip-path=\"url(#cl1_1)\" fill=\"#FFFFFF\" fill-opacity=\"1\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <defs>\n      <clipPath id=\"cl1_2\">\n        <rect x=\"38.92\" y=\"23.90\" width=\"387.60\" height=\"377.76\"/>\n      <\/clipPath>\n    <\/defs>\n    <rect x=\"38.92\" y=\"23.90\" width=\"387.60\" height=\"377.76\" id=\"3\" clip-path=\"url(#cl1_2)\" fill=\"#EBEBEB\" fill-opacity=\"1\" stroke=\"none\"/>\n    <polyline points=\"38.92,342.89 426.52,342.89\" id=\"4\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,246.15 426.52,246.15\" id=\"5\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,149.41 426.52,149.41\" id=\"6\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,52.68 426.52,52.68\" id=\"7\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"66.55,401.66 66.55,23.90\" id=\"8\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"159.23,401.66 159.23,23.90\" id=\"9\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"251.91,401.66 251.91,23.90\" id=\"10\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"344.58,401.66 344.58,23.90\" id=\"11\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,391.26 426.52,391.26\" id=\"12\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,294.52 426.52,294.52\" id=\"13\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,197.78 426.52,197.78\" id=\"14\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,101.05 426.52,101.05\" id=\"15\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"112.89,401.66 112.89,23.90\" id=\"16\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"205.57,401.66 205.57,23.90\" id=\"17\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"298.24,401.66 298.24,23.90\" id=\"18\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"390.92,401.66 390.92,23.90\" id=\"19\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <circle cx=\"183.88\" cy=\"47.84\" r=\"1.47pt\" id=\"20\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"216.32\" cy=\"343.86\" r=\"1.47pt\" id=\"21\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"156.63\" cy=\"282.91\" r=\"1.47pt\" id=\"22\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"221.14\" cy=\"347.73\" r=\"1.47pt\" id=\"23\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"241.34\" cy=\"370.94\" r=\"1.47pt\" id=\"24\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"212.80\" cy=\"41.07\" r=\"1.47pt\" id=\"25\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"208.53\" cy=\"346.76\" r=\"1.47pt\" id=\"26\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"287.49\" cy=\"331.28\" r=\"1.47pt\" id=\"27\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"207.23\" cy=\"354.50\" r=\"1.47pt\" id=\"28\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"250.98\" cy=\"320.64\" r=\"1.47pt\" id=\"29\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"368.49\" cy=\"331.28\" r=\"1.47pt\" id=\"30\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"188.88\" cy=\"377.71\" r=\"1.47pt\" id=\"31\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"170.53\" cy=\"261.63\" r=\"1.47pt\" id=\"32\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"73.96\" cy=\"301.29\" r=\"1.47pt\" id=\"33\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"218.91\" cy=\"352.56\" r=\"1.47pt\" id=\"34\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"163.49\" cy=\"358.37\" r=\"1.47pt\" id=\"35\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"257.28\" cy=\"168.76\" r=\"1.47pt\" id=\"36\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"110.11\" cy=\"343.86\" r=\"1.47pt\" id=\"37\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"408.90\" cy=\"233.58\" r=\"1.47pt\" id=\"38\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"251.54\" cy=\"358.37\" r=\"1.47pt\" id=\"39\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"188.70\" cy=\"325.48\" r=\"1.47pt\" id=\"40\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"242.45\" cy=\"223.90\" r=\"1.47pt\" id=\"41\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"264.14\" cy=\"350.63\" r=\"1.47pt\" id=\"42\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"185.36\" cy=\"353.53\" r=\"1.47pt\" id=\"43\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"244.49\" cy=\"259.69\" r=\"1.47pt\" id=\"44\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"203.16\" cy=\"282.91\" r=\"1.47pt\" id=\"45\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"210.39\" cy=\"139.74\" r=\"1.47pt\" id=\"46\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"214.83\" cy=\"274.21\" r=\"1.47pt\" id=\"47\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"276.37\" cy=\"301.29\" r=\"1.47pt\" id=\"48\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"223.36\" cy=\"214.23\" r=\"1.47pt\" id=\"49\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"208.53\" cy=\"290.65\" r=\"1.47pt\" id=\"50\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"56.54\" cy=\"318.70\" r=\"1.47pt\" id=\"51\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"251.91\" cy=\"254.86\" r=\"1.47pt\" id=\"52\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"93.61\" cy=\"283.88\" r=\"1.47pt\" id=\"53\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"177.39\" cy=\"227.77\" r=\"1.47pt\" id=\"54\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"133.83\" cy=\"365.14\" r=\"1.47pt\" id=\"55\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"122.71\" cy=\"206.49\" r=\"1.47pt\" id=\"56\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"263.58\" cy=\"241.31\" r=\"1.47pt\" id=\"57\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"169.42\" cy=\"361.27\" r=\"1.47pt\" id=\"58\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"211.50\" cy=\"211.33\" r=\"1.47pt\" id=\"59\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"351.44\" cy=\"104.92\" r=\"1.47pt\" id=\"60\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"174.06\" cy=\"87.50\" r=\"1.47pt\" id=\"61\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"276.56\" cy=\"248.09\" r=\"1.47pt\" id=\"62\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"144.58\" cy=\"285.81\" r=\"1.47pt\" id=\"63\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"156.82\" cy=\"384.49\" r=\"1.47pt\" id=\"64\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"261.73\" cy=\"379.65\" r=\"1.47pt\" id=\"65\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"354.96\" cy=\"189.08\" r=\"1.47pt\" id=\"66\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"286.38\" cy=\"318.70\" r=\"1.47pt\" id=\"67\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"194.63\" cy=\"382.55\" r=\"1.47pt\" id=\"68\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"186.47\" cy=\"274.21\" r=\"1.47pt\" id=\"69\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"399.82\" cy=\"186.17\" r=\"1.47pt\" id=\"70\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"121.41\" cy=\"366.11\" r=\"1.47pt\" id=\"71\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"58.95\" cy=\"274.21\" r=\"1.47pt\" id=\"72\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"240.04\" cy=\"328.38\" r=\"1.47pt\" id=\"73\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"185.73\" cy=\"340.95\" r=\"1.47pt\" id=\"74\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <defs>\n      <clipPath id=\"cl1_3\">\n        <rect x=\"0.00\" y=\"0.00\" width=\"432.00\" height=\"432.00\"/>\n      <\/clipPath>\n    <\/defs>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"18.97\" y=\"394.48\" id=\"75\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">400<\/text>\n    <\/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"18.97\" y=\"297.74\" id=\"76\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">500<\/text>\n    <\/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"18.97\" y=\"201.00\" id=\"77\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">600<\/text>\n    <\/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"18.97\" y=\"104.27\" id=\"78\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">700<\/text>\n    <\/g>\n    <polyline points=\"36.18,391.26 38.92,391.26\" id=\"79\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"36.18,294.52 38.92,294.52\" id=\"80\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"36.18,197.78 38.92,197.78\" id=\"81\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"36.18,101.05 38.92,101.05\" id=\"82\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"112.89,404.40 112.89,401.66\" id=\"83\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"205.57,404.40 205.57,401.66\" id=\"84\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"298.24,404.40 298.24,401.66\" id=\"85\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"390.92,404.40 390.92,401.66\" id=\"86\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"102.88\" y=\"413.03\" id=\"87\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">1000<\/text>\n    <\/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"195.56\" y=\"413.03\" id=\"88\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">1500<\/text>\n    <\/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"288.23\" y=\"413.03\" id=\"89\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">2000<\/text>\n    <\/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"380.91\" y=\"413.03\" id=\"90\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">2500<\/text>\n    <\/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"192.07\" y=\"426.38\" id=\"91\" font-size=\"8.25pt\" font-family=\"Arial\">career strikeouts<\/text>\n    <\/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text transform=\"translate(13.35,255.27) rotate(-90)\" id=\"92\" font-size=\"8.25pt\" font-family=\"Arial\">career Homeruns<\/text>\n    <\/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"38.92\" y=\"14.79\" id=\"93\" font-size=\"9.90pt\" font-family=\"Arial\">career home runs vs strike outs for great hitlers.<\/text>\n    <\/g>\n  <\/g>\n<\/svg>\n<div class='ggiraph-toolbar'><div class='ggiraph-toolbar-block shinyonly'><a class='ggiraph-toolbar-icon neutral' title='lasso selection' href='javascript:lasso_on(\"uid034fc682a02b11e7ba6161faf1aa68a1\", true, \"array_selected_uid034fc682a02b11e7ba6161faf1aa68a1\", \"clicked_uid034fc682a02b11e7ba6161faf1aa68a1\");'><svg width='1.5em' height='1.5em' viewBox='0 0 230 230'><g><ellipse ry='65.5' rx='86.5' cy='94' cx='115.5' stroke-width='20' fill='transparent'/><ellipse ry='11.500001' rx='10.5' cy='153' cx='91.5' stroke-width='20' fill='transparent'/><line y2='210.5' x2='105' y1='164.5' x1='96' stroke-width='20'/><\/g><\/svg><\/a><a class='ggiraph-toolbar-icon drop' title='lasso anti-selection' href='javascript:lasso_on(\"uid034fc682a02b11e7ba6161faf1aa68a1\", false, \"array_selected_uid034fc682a02b11e7ba6161faf1aa68a1\", \"clicked_uid034fc682a02b11e7ba6161faf1aa68a1\");'><svg width='1.5em' height='1.5em' viewBox='0 0 230 230'><g><ellipse ry='65.5' rx='86.5' cy='94' cx='115.5' stroke-width='20' fill='transparent'/><ellipse ry='11.500001' rx='10.5' cy='153' cx='91.5' stroke-width='20' fill='transparent'/><line y2='210.5' x2='105' y1='164.5' x1='96' stroke-width='20'/><\/g><\/svg><\/a><\/div><\/div><style>div.tooltip_uid034fc682a02b11e7ba6161faf1aa68a1 {position:absolute;pointer-events:none;z-index:999;padding:5px;background:black;color:white;border-radius:2px 2px 2px 2px;}\n.cl_data_id_uid034fc682a02b11e7ba6161faf1aa68a1:{}.cl_data_id_uid034fc682a02b11e7ba6161faf1aa68a1:hover{Fill:white;stroke:blue}\n.clicked_uid034fc682a02b11e7ba6161faf1aa68a1{Fill:white;stroke:blue}<\/style><\/div>","uid":"uid034fc682a02b11e7ba6161faf1aa68a1","funname":"init_prop_uid034fc682a02b11e7ba6161faf1aa68a1","sel_array_name":"array_selected_uid034fc682a02b11e7ba6161faf1aa68a1","selected_class":"clicked_uid034fc682a02b11e7ba6161faf1aa68a1","tooltip_opacity":0.9,"tooltip_offx":10,"tooltip_offy":0,"zoom_max":1,"use_wh":false,"width":"80%","selection_type":"multiple","flexdashboard":false},"evals":[],"jsHooks":[]}</script>
+</div>
+
+</article>
+
+            
+              <article id="2017-09-23-dplyr">
+  <h1>Dplyr</h1>
+  <div id="jerrin-joe-varghese" class="section level4">
+<h4><em>Jerrin Joe Varghese</em></h4>
+<div id="age-26" class="section level5">
+<h5>Age : 26</h5>
+</div>
+</div>
+<div id="about-me" class="section level4">
+<h4><strong>About Me</strong> :</h4>
+<div id="i-am-a-data-science-student-at-mercyhurst.worked-at-einfochips-for-3-years-as" class="section level5">
+<h5>I am a data Science student at mercyhurst.Worked at Einfochips for 3 years as</h5>
+</div>
+<div id="a-device-driver-engineer-for-texas-instruments." class="section level5">
+<h5>a device driver engineer for Texas instruments.</h5>
+<p><img src="images/3.jpg" width="300"/></p>
+</div>
+</div>
+<div id="introduction" class="section level3">
+<h3>Introduction</h3>
+<p><em>dplyr is a new package which provides a set of tools to efficiently manipulate datasets in R. dplyr is the next iteration of plyr, focussing on only data frames. dplyr is faster and has a more consistent API and is easier to use.</em></p>
+<div id="with-the-help-of-these-shown-libraries-we-will-analyze-and-understand-some-of" class="section level8">
+<p>With the help of these shown libraries, we will analyze and understand some of</p>
+</div>
+<div id="the-features-of-dplyr." class="section level8">
+<p>the features of dplyr.</p>
+<p><span style="color:red"><strong>Note : Lahman is a baseball dataset. It contains information of baseball players.</strong></span></p>
+<pre class="r"><code>library(Lahman)
+library(dplyr)</code></pre>
+<p>** Lets go through some of the features with example**</p>
+</div>
+<div id="filtering-columns-and-rows" class="section level4">
+<h4>Filtering Columns and Rows</h4>
+<p><em>When using dplyr, you can filter columns and rows by using select and filter. Let’s look at an example using Lahman data base. We first have to load the Lahman and dplyr packages.</em></p>
+<p><em>Now, Suppose we would like to see the homerun totals for the 1927 New York Yankees, We could run the following Code :</em></p>
+<pre class="r"><code>Batting%&gt;%
+  select(playerID,yearID,teamID,HR)%&gt;%
+  filter(teamID==&#39;NYA&#39; &amp; yearID==1927)</code></pre>
+<pre><code>##     playerID yearID teamID HR
+## 1  beallwa01   1927    NYA  0
+## 2  bengobe01   1927    NYA  0
+## 3  collipa01   1927    NYA  7
+## 4  combsea01   1927    NYA  6
+## 5  duganjo01   1927    NYA  2
+## 6  durstce01   1927    NYA  0
+## 7  gazelmi01   1927    NYA  0
+## 8  gehrilo01   1927    NYA 47
+## 9  giardjo01   1927    NYA  0
+## 10 grabojo01   1927    NYA  0
+## 11  hoytwa01   1927    NYA  0
+## 12 koenima01   1927    NYA  3
+## 13 lazzeto01   1927    NYA 18
+## 14 meusebo01   1927    NYA  8
+## 15 moorewi01   1927    NYA  1
+## 16 morehra01   1927    NYA  1
+## 17 paschbe01   1927    NYA  2
+## 18 pennohe01   1927    NYA  0
+## 19 pipgrge01   1927    NYA  1
+## 20 ruethdu01   1927    NYA  1
+## 21  ruthba01   1927    NYA 60
+## 22 shawkbo01   1927    NYA  0
+## 23 shockur01   1927    NYA  0
+## 24 thomamy01   1927    NYA  0
+## 25  weraju01   1927    NYA  1</code></pre>
+<p>Please find some examples</p>
+<p>Example 1. # more than 50 Home Runs and arrange Solution :</p>
+<pre class="r"><code>        Batting%&gt;%
+          select(playerID,yearID,teamID,HR)%&gt;%
+          filter(HR&gt;50)%&gt;%
+          arrange(HR) # assending order by default.</code></pre>
+<pre><code>##     playerID yearID teamID HR
+## 1  kinerra01   1947    PIT 51
+## 2   mizejo01   1947    NY1 51
+## 3   mayswi01   1955    NY1 51
+## 4  fieldce01   1990    DET 51
+## 5  jonesan01   2005    ATL 51
+## 6  mantlmi01   1956    NYA 52
+## 7   mayswi01   1965    SFN 52
+## 8  fostege01   1977    CIN 52
+## 9  mcgwima01   1996    OAK 52
+## 10 rodrial01   2001    TEX 52
+## 11 thomeji01   2002    CLE 52
+## 12 davisch02   2013    BAL 53
+## 13  ruthba01   1920    NYA 54
+## 14  ruthba01   1928    NYA 54
+## 15 kinerra01   1949    PIT 54
+## 16 mantlmi01   1961    NYA 54
+## 17 ortizda01   2006    BOS 54
+## 18 rodrial01   2007    NYA 54
+## 19 bautijo02   2010    TOR 54
+## 20 wilsoha01   1930    CHN 56
+## 21 griffke02   1997    SEA 56
+## 22 griffke02   1998    SEA 56
+## 23 gonzalu01   2001    ARI 57
+## 24 rodrial01   2002    TEX 57
+## 25  foxxji01   1932    PHA 58
+## 26 greenha01   1938    DET 58
+## 27 howarry01   2006    PHI 58
+## 28  ruthba01   1921    NYA 59
+## 29  ruthba01   1927    NYA 60
+## 30 marisro01   1961    NYA 61
+## 31  sosasa01   1999    CHN 63
+## 32  sosasa01   2001    CHN 64
+## 33 mcgwima01   1999    SLN 65
+## 34  sosasa01   1998    CHN 66
+## 35 mcgwima01   1998    SLN 70
+## 36 bondsba01   2001    SFN 73</code></pre>
+<p>Example 2. More than 50 Home Runs and arrange Solution :</p>
+<pre class="r"><code>  Batting%&gt;%
+          select(playerID,yearID,teamID,HR)%&gt;%
+          filter(HR&gt;50)%&gt;%
+          #arrange(HR) # assending order
+          arrange(desc(HR))     #desscending order </code></pre>
+<pre><code>##     playerID yearID teamID HR
+## 1  bondsba01   2001    SFN 73
+## 2  mcgwima01   1998    SLN 70
+## 3   sosasa01   1998    CHN 66
+## 4  mcgwima01   1999    SLN 65
+## 5   sosasa01   2001    CHN 64
+## 6   sosasa01   1999    CHN 63
+## 7  marisro01   1961    NYA 61
+## 8   ruthba01   1927    NYA 60
+## 9   ruthba01   1921    NYA 59
+## 10  foxxji01   1932    PHA 58
+## 11 greenha01   1938    DET 58
+## 12 howarry01   2006    PHI 58
+## 13 gonzalu01   2001    ARI 57
+## 14 rodrial01   2002    TEX 57
+## 15 wilsoha01   1930    CHN 56
+## 16 griffke02   1997    SEA 56
+## 17 griffke02   1998    SEA 56
+## 18  ruthba01   1920    NYA 54
+## 19  ruthba01   1928    NYA 54
+## 20 kinerra01   1949    PIT 54
+## 21 mantlmi01   1961    NYA 54
+## 22 ortizda01   2006    BOS 54
+## 23 rodrial01   2007    NYA 54
+## 24 bautijo02   2010    TOR 54
+## 25 davisch02   2013    BAL 53
+## 26 mantlmi01   1956    NYA 52
+## 27  mayswi01   1965    SFN 52
+## 28 fostege01   1977    CIN 52
+## 29 mcgwima01   1996    OAK 52
+## 30 rodrial01   2001    TEX 52
+## 31 thomeji01   2002    CLE 52
+## 32 kinerra01   1947    PIT 51
+## 33  mizejo01   1947    NY1 51
+## 34  mayswi01   1955    NY1 51
+## 35 fieldce01   1990    DET 51
+## 36 jonesan01   2005    ATL 51</code></pre>
+<p>Example 3 : Less than 10 times strike-out and have atleast 400 at-bats (AB),also the players with small strike outs (SO) at top and more than 50 Home Runs. Solution :</p>
+<pre class="r"><code>  Batting%&gt;%
+          select(playerID,yearID,teamID,AB,SO)%&gt;%
+          filter(SO&lt;10 &amp; AB&gt;=400)%&gt;%
+          arrange(SO)</code></pre>
+<pre><code>##     playerID yearID teamID  AB SO
+## 1  doyleja01   1894    NY1 422  3
+## 2  seweljo01   1932    NYA 503  3
+## 3  seweljo01   1925    CLE 608  4
+## 4  seweljo01   1929    CLE 578  4
+## 5  seweljo01   1933    NYA 524  4
+## 6   wardjo01   1893    NY1 588  5
+## 7  holloch01   1922    CHN 592  5
+## 8  mcinnst01   1922    CLE 537  5
+## 9  wanerll01   1936    PIT 414  5
+## 10 wrighge01   1875    BS1 408  6
+## 11 broutda01   1889    BSN 485  6
+## 12 keelewi01   1894    BLN 590  6
+## 13  wardjo01   1894    NY1 540  6
+## 14 quinnjo02   1895    SLN 543  6
+## 15 mcinnst01   1924    BSN 581  6
+## 16 seweljo01   1926    CLE 578  6
+## 17  wardjo01   1889    NY1 479  7
+## 18 crossla01   1893    PHI 415  7
+## 19 quinnjo02   1893    SLN 547  7
+## 20 crossla01   1894    PHI 529  7
+## 21 vaughfa01   1896    CIN 433  7
+## 22 cochrmi01   1927    PHA 432  7
+## 23 seweljo01   1927    CLE 569  7
+## 24 traynpi01   1929    PIT 540  7
+## 25 muelldo01   1956    NY1 453  7
+## 26 connoro01   1885    NY1 455  8
+## 27 glassja01   1887    IN3 483  8
+## 28 glassja01   1890    NY1 512  8
+## 29 donovpa01   1893    PIT 499  8
+## 30 dungasa01   1893    CHN 465  8
+## 31 pinknge01   1893    LS3 446  8
+## 32 brodist01   1894    BLN 573  8
+## 33 quinnjo02   1894    SLN 405  8
+## 34 bierblo01   1895    PIT 466  8
+## 35 crossla01   1895    PHI 535  8
+## 36   hoydu01   1895    CIN 429  8
+## 37 roushed01   1921    CIN 418  8
+## 38 collied01   1923    CHA 505  8
+## 39 collied01   1925    CHA 425  8
+## 40 speaktr01   1927    WS1 523  8
+## 41 cochrmi01   1929    PHA 514  8
+## 42 seweljo01   1931    NYA 484  8
+## 43 wanerll01   1933    PIT 500  8
+## 44 verbaem01   1947    PHI 540  8
+## 45 ansonca01   1883    CHN 413  9
+## 46 broutda01   1887    DTN 500  9
+## 47   hoydu01   1893    WAS 564  9
+## 48 bierblo01   1894    PIT 525  9
+## 49 broutda01   1894    BLN 525  9
+## 50 milledo01   1894    SLN 481  9
+## 51 keelewi01   1896    BLN 544  9
+## 52 mckeaed01   1896    CL4 571  9
+## 53 speaktr01   1918    CLE 471  9
+## 54  dealch01   1921    CHN 422  9
+## 55 mcinnst01   1921    BOS 584  9
+## 56 severha01   1921    SLA 472  9
+## 57  highan01   1926    BSN 476  9
+## 58 summaho01   1926    CLE 581  9
+## 59 seweljo01   1928    CLE 588  9
+## 60  ricesa01   1929    WS1 616  9
+## 61 leachfr01   1931    NY1 515  9
+## 62 busched01   1945    PHA 416  9
+## 63 holmeto01   1945    BSN 636  9
+## 64 boudrlo01   1948    CLE 560  9
+## 65 mitchda01   1952    CLE 511  9</code></pre>
+<p>Example 4 : Find players from philies with greater than 30 HomeRuns and from year 1970 to 1979. Solution :</p>
+<pre class="r"><code>Batting%&gt;%
+  select(playerID,teamID,yearID,HR)%&gt;%
+  filter(teamID==&#39;PHI&#39; &amp; HR&gt;30,yearID&lt;=&#39;1979&#39; &amp; yearID &gt;=&#39;1970&#39;)</code></pre>
+<pre><code>##    playerID teamID yearID HR
+## 1 johnsde01    PHI   1971 34
+## 2 schmimi01    PHI   1974 36
+## 3 luzingr01    PHI   1975 34
+## 4 schmimi01    PHI   1975 38
+## 5 schmimi01    PHI   1976 38
+## 6 luzingr01    PHI   1977 39
+## 7 schmimi01    PHI   1977 38
+## 8 luzingr01    PHI   1978 35
+## 9 schmimi01    PHI   1979 45</code></pre>
+<p>Example 5 : Find Players with less than 60 Strike-outs and atleast more than 40 home runs Solution :</p>
+<pre class="r"><code>Batting%&gt;%
+  select(playerID,teamID,yearID,HR,SO)%&gt;%
+  filter( SO&lt;60 &amp; HR&gt;=40)</code></pre>
+<pre><code>##     playerID teamID yearID HR SO
+## 1  hornsro01    SLN   1922 42 50
+## 2  willicy01    PHI   1923 41 57
+## 3    ottme01    NY1   1929 42 38
+## 4  kleinch01    PHI   1930 40 50
+## 5  gehrilo01    NYA   1931 46 56
+## 6   ruthba01    NYA   1931 46 51
+## 7  gehrilo01    NYA   1934 49 31
+## 8  gehrilo01    NYA   1936 49 46
+## 9  troskha01    CLE   1936 42 58
+## 10 dimagjo01    NYA   1937 46 37
+## 11  mizejo01    SLN   1940 43 49
+## 12  mizejo01    NY1   1947 51 42
+## 13  mizejo01    NY1   1948 40 37
+## 14 willite01    BOS   1949 43 48
+## 15 kinerra01    PIT   1951 42 57
+## 16 camparo01    BRO   1953 41 58
+## 17 kluszte01    CIN   1953 40 34
+## 18 rosenal01    CLE   1953 43 48
+## 19 kluszte01    CIN   1954 49 35
+## 20  mayswi01    NY1   1954 41 57
+## 21 kluszte01    CIN   1955 47 40
+## 22 aaronha01    ML1   1957 44 58
+## 23 sievero01    WS1   1957 42 55
+## 24 aaronha01    ATL   1969 44 47
+## 25 aaronha01    ATL   1971 47 58
+## 26 aaronha01    ATL   1973 40 51
+## 27 thomafr04    CHA   1993 41 54
+## 28 bondsba01    SFN   2002 46 47
+## 29 bondsba01    SFN   2003 45 58
+## 30 bondsba01    SFN   2004 45 41
+## 31 pujolal01    SLN   2004 46 52
+## 32 pujolal01    SLN   2006 49 50</code></pre>
+</div>
+<div id="grouping-and-aggrigation" class="section level4">
+<h4>Grouping and Aggrigation</h4>
+<p><em>When you aggregate data, you replace groups of observations with summary statistics based on those observations. When you reshape data, you alter the structure (rows and columns) determining how the data is organized.</em></p>
+<p><strong>Here are few examples on Aggregation.</strong></p>
+<p>Example 1 :</p>
+<pre class="r"><code>Batting%&gt;%
+  select(playerID,HR)%&gt;%
+  filter(playerID==&#39;ruthba01&#39;)</code></pre>
+<pre><code>##    playerID HR
+## 1  ruthba01  0
+## 2  ruthba01  4
+## 3  ruthba01  3
+## 4  ruthba01  2
+## 5  ruthba01 11
+## 6  ruthba01 29
+## 7  ruthba01 54
+## 8  ruthba01 59
+## 9  ruthba01 35
+## 10 ruthba01 41
+## 11 ruthba01 46
+## 12 ruthba01 25
+## 13 ruthba01 47
+## 14 ruthba01 60
+## 15 ruthba01 54
+## 16 ruthba01 46
+## 17 ruthba01 49
+## 18 ruthba01 46
+## 19 ruthba01 41
+## 20 ruthba01 34
+## 21 ruthba01 22
+## 22 ruthba01  6</code></pre>
+<p>Example 2 :</p>
+<pre class="r"><code>Batting%&gt;%
+  filter(playerID == &#39;ruthba01&#39;)%&gt;%
+  group_by(playerID)%&gt;%
+  summarise(career_HR = sum(HR))</code></pre>
+<pre><code>## # A tibble: 1 x 2
+##   playerID career_HR
+##      &lt;chr&gt;     &lt;int&gt;
+## 1 ruthba01       714</code></pre>
+<p>Example 3 : Find the career homerun totals for all players, but limit the list to those who have a creer total of 600 or more.Put highest totals at the top.</p>
+<pre class="r"><code>Batting%&gt;%
+  group_by(playerID)%&gt;%
+  summarise(career_HR=sum(HR))%&gt;%
+  filter(career_HR&gt;=600)%&gt;%
+  arrange(desc(career_HR))</code></pre>
+<pre><code>## # A tibble: 8 x 2
+##    playerID career_HR
+##       &lt;chr&gt;     &lt;int&gt;
+## 1 bondsba01       762
+## 2 aaronha01       755
+## 3  ruthba01       714
+## 4 rodrial01       696
+## 5  mayswi01       660
+## 6 griffke02       630
+## 7 thomeji01       612
+## 8  sosasa01       609</code></pre>
+<p>Example 4 : What players have the highest average per season hr tottals</p>
+<pre class="r"><code>Batting%&gt;%
+  group_by(playerID)%&gt;%
+  summarise(HR_avg=mean(HR))%&gt;%
+  filter(HR_avg &gt; 30)%&gt;%
+  arrange(desc(HR_avg))</code></pre>
+<pre><code>## # A tibble: 13 x 2
+##     playerID   HR_avg
+##        &lt;chr&gt;    &lt;dbl&gt;
+##  1 pujolal01 36.93750
+##  2 bondsba01 34.63636
+##  3 mcgwima01 34.29412
+##  4 kinerra01 33.54545
+##  5 aaronha01 32.82609
+##  6 bryankr01 32.50000
+##  7  ruthba01 32.45455
+##  8  sosasa01 32.05263
+##  9 cabremi01 31.85714
+## 10 belleal01 31.75000
+## 11 rodrial01 31.63636
+## 12 schmimi01 30.44444
+## 13 abreujo02 30.33333</code></pre>
+<p>Example 5 : what players since 1970 has hit more than 50 HR at least once</p>
+<pre class="r"><code>Batting%&gt;%
+  filter(yearID&gt;=1970)%&gt;%
+  group_by(playerID)%&gt;%
+  summarise(maxHR = max(HR))%&gt;%
+  filter(maxHR&gt;50)%&gt;%
+  select(playerID)</code></pre>
+<pre><code>## # A tibble: 14 x 1
+##     playerID
+##        &lt;chr&gt;
+##  1 bautijo02
+##  2 bondsba01
+##  3 davisch02
+##  4 fieldce01
+##  5 fostege01
+##  6 gonzalu01
+##  7 griffke02
+##  8 howarry01
+##  9 jonesan01
+## 10 mcgwima01
+## 11 ortizda01
+## 12 rodrial01
+## 13  sosasa01
+## 14 thomeji01</code></pre>
+</div>
+</div>
+<div id="reference" class="section level3">
+<h3>Reference</h3>
+<p><a href="https://blog.rstudio.com/2014/01/17/introducing-dplyr/" class="uri">https://blog.rstudio.com/2014/01/17/introducing-dplyr/</a></p>
+<p><a href="https://www.r-statistics.com/2012/01/aggregation-and-restructuring-data-from-r-in-action/" class="uri">https://www.r-statistics.com/2012/01/aggregation-and-restructuring-data-from-r-in-action/</a></p>
 </div>
 
 </article>

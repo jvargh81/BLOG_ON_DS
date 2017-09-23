@@ -1,0 +1,171 @@
+---
+title: Dplyr
+author: Jerrin Varghese
+date: '2017-09-23'
+slug: dplyr
+categories: [dplyr]
+tags:
+  - lahman
+  - dplyr
+---
+
+---
+title: "dplyr"
+output: html_document
+---
+#### *Jerrin Joe Varghese*
+##### Age : 26
+
+
+
+#### **About Me** :
+##### I am a data Science student at mercyhurst.Worked at Einfochips for 3 years as
+##### a device driver engineer for Texas instruments.
+
+ <img src="images/3.jpg" width="300"/>
+ 
+### Introduction 
+_dplyr is a new package which provides a set of tools to efficiently manipulate datasets in R. dplyr is the next iteration of plyr, focussing on only data frames. dplyr is faster and has a more consistent API and is easier to use._
+
+######## With the help of these shown libraries, we will analyze and understand some of 
+######## the features of dplyr.
+
+ <span style="color:red">**Note : Lahman is a baseball dataset. It contains information of baseball players.**</span>
+ 
+
+```{r message=FALSE, warning=FALSE}
+library(Lahman)
+library(dplyr)
+```
+
+** Lets go through some of the features with example**
+
+#### Filtering Columns and Rows
+
+_When using dplyr, you can filter columns and rows by using select and filter.
+Let's look at an example using Lahman data base.
+We first have to load the Lahman and dplyr packages._
+
+_Now, Suppose we would like to see the homerun totals for the 1927 New York Yankees, We could run the following Code :_
+
+```{r}
+Batting%>%
+  select(playerID,yearID,teamID,HR)%>%
+  filter(teamID=='NYA' & yearID==1927)
+```
+
+Please find some examples 
+
+Example 1.  # more than 50 Home Runs and arrange
+Solution :
+
+```{r}
+
+        Batting%>%
+          select(playerID,yearID,teamID,HR)%>%
+          filter(HR>50)%>%
+          arrange(HR) # assending order by default.
+```
+
+Example 2.  More than 50 Home Runs and arrange
+Solution :
+
+```{r}
+  Batting%>%
+          select(playerID,yearID,teamID,HR)%>%
+          filter(HR>50)%>%
+          #arrange(HR) # assending order
+          arrange(desc(HR))     #desscending order 
+```
+
+Example 3 : Less than 10 times strike-out and have atleast 400 at-bats (AB),also the
+            players with small strike outs (SO) at top and more than 50 Home Runs.
+Solution : 
+
+```{r}
+  Batting%>%
+          select(playerID,yearID,teamID,AB,SO)%>%
+          filter(SO<10 & AB>=400)%>%
+          arrange(SO)
+```
+
+Example 4 :  Find players from philies with greater than 30 HomeRuns and from year 1970 to 1979.
+Solution : 
+
+```{r}
+Batting%>%
+  select(playerID,teamID,yearID,HR)%>%
+  filter(teamID=='PHI' & HR>30,yearID<='1979' & yearID >='1970')
+```
+
+Example 5 : Find Players with less than 60 Strike-outs and atleast more than 40 home runs
+Solution :
+
+```{r}
+Batting%>%
+  select(playerID,teamID,yearID,HR,SO)%>%
+  filter( SO<60 & HR>=40)
+```
+
+
+
+#### Grouping and Aggrigation 
+
+_When you aggregate data, you replace groups of observations with summary statistics based on those observations. When you reshape data, you alter the structure (rows and columns) determining how the data is organized._
+
+**Here are few examples on Aggregation.**
+
+Example 1 : 
+```{r}
+Batting%>%
+  select(playerID,HR)%>%
+  filter(playerID=='ruthba01')
+```
+
+Example 2 : 
+```{r}
+Batting%>%
+  filter(playerID == 'ruthba01')%>%
+  group_by(playerID)%>%
+  summarise(career_HR = sum(HR))
+```
+
+Example 3 : 
+Find the career homerun totals for all players, but limit the list to those
+who have a creer total of 600 or more.Put highest totals at the top.
+```{r}
+Batting%>%
+  group_by(playerID)%>%
+  summarise(career_HR=sum(HR))%>%
+  filter(career_HR>=600)%>%
+  arrange(desc(career_HR))
+```
+
+
+Example 4 : 
+What players have the highest average per season hr tottals
+```{r}
+Batting%>%
+  group_by(playerID)%>%
+  summarise(HR_avg=mean(HR))%>%
+  filter(HR_avg > 30)%>%
+  arrange(desc(HR_avg))
+
+```
+
+Example 5 : 
+what players since 1970 has hit more than 50 HR at least once
+```{r}
+Batting%>%
+  filter(yearID>=1970)%>%
+  group_by(playerID)%>%
+  summarise(maxHR = max(HR))%>%
+  filter(maxHR>50)%>%
+  select(playerID)
+```
+
+
+### Reference 
+https://blog.rstudio.com/2014/01/17/introducing-dplyr/
+
+https://www.r-statistics.com/2012/01/aggregation-and-restructuring-data-from-r-in-action/
