@@ -1,5 +1,5 @@
 ---
-title: How to use GGplots
+title: Scatter Plots
 author: Jerrin Varghese
 date: '2017-09-23'
 image: "public/images/1.jpg"

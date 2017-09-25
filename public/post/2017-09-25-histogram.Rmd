@@ -1,0 +1,54 @@
+---
+title: Histogram
+author: Jerrin Joe Varghese
+date: '2017-09-25'
+slug: histogram
+categories: []
+tags:
+  - ggiraph
+  - ggplot
+  - dplyr
+  - lahman
+---
+
+#### Data visualization using ggplot and ggiraph.
+
+_Using ggplot, we can display the data using graphs. In this post we will 
+be going through histogram graph._
+
+ **Let's inherit some libraries to start with**
+
+
+```{r message=FALSE, warning=FALSE}
+library(dplyr)
+library(Lahman) 
+library(devtools)
+library(blogdown)
+library(ggplot2)
+library(ggiraph)
+
+```
+
+**Histogram is used to analyse a single type of data.We can analyse one type of
+category, for example weight in this case**
+
+```{r}
+df<-Master%>%
+  # this helps to eliminate a empty entry.Here we are filtering only the one with value of weight.
+  filter(!is.na(weight))%>%
+  select(weight)
+  
+```
+
+** Lets plot the histogram using ggplot**
+
+```{r}
+ggplot()+
+  #Here we will be using geom_histogram API for ploting the graph.
+  #Here we won't use y axis as, we have only one category of value.
+  geom_histogram(data=df,aes(x=weight),color="white",fill="blue",bins=40)+
+  ggtitle("Baseball player weights")
+
+```
+
+

@@ -10,7 +10,7 @@ disableKinds=["RSS"]
   description = '<!--[-->This Blog will teach you or give a basic</a> understanding on dplyr, ggplot, ggiraph using R.<!--]--><br />
                 </a> <!--]-->'
   logo = "fa-diamond"
-  copyright = "Untitled"
+  copyright = "Jerrin Joe Varghese"
 
 [[params.social]]
   medium = "twitter"
