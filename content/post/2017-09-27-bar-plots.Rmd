@@ -12,6 +12,8 @@ tags:
   - lahman
 ---
 
+ <img src="images/4.jpg" width="300"/>
+
 ** Lets go through another kinda of graph called the Bar graph. **
 
 _Inserting libraries to use for the plots_
@@ -37,18 +39,31 @@ df<-Teams%>%
   arrange(HR)
 ```
 
-** Converting to factors or categorising it.**
-```{r}
-df$name<-factor(df$name,levels=df$name)
-```
-
-
-** Now lets plot the graph using ggplot **
+** We are just trying to plot the graph after using arrange api.**
 
 ```{r}
 ggplot()+
   # (dont do grouping or tallying))stat = identity means ggplot will do tallying for us.
-  geom_bar(data=df,aes(x=name,y=HR),color="white",fill="grey",stat = "identity")+
+  geom_bar(data=df,aes(x=name,y=HR),color="white",fill="purple",stat = "identity")+
+  # Since the names are big and it will not fit all together, we can flip it over
+  #using the below api.
+  coord_flip()
+```
+<span style="color:red">*Note : The above graph is not arranged, though using arrange api. We have to factor it inorder to arrange the data.* text</span>
+
+** Converting to factors or categorising it.**
+```{r}
+# In this way we get arranged graph, rather than a up and down bar graph.
+df$name<-factor(df$name,levels=df$name)
+```
+
+
+** Now lets plot the graph using ggplot after arranging **
+
+```{r}
+ggplot()+
+  # (dont do grouping or tallying))stat = identity means ggplot will do tallying for us.
+  geom_bar(data=df,aes(x=name,y=HR),color="white",fill="purple",stat = "identity")+
   # Since the names are big and it will not fit all together, we can flip it over
   #using the below api.
   coord_flip()

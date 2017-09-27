@@ -14,6 +14,7 @@ tags:
 
 
 
+<p><img src="images/4.jpg" width="300"/></p>
 <p>** Lets go through another kinda of graph called the Bar graph. **</p>
 <p><em>Inserting libraries to use for the plots</em></p>
 <pre class="r"><code>library(Lahman)
@@ -29,13 +30,22 @@ library(ggiraph)</code></pre>
   #Arranging all data in asscending order, but we have to factor it 
   #inorder to display on the bargraph.
   arrange(HR)</code></pre>
-<p>** Converting to factors or categorising it.**</p>
-<pre class="r"><code>df$name&lt;-factor(df$name,levels=df$name)</code></pre>
-<p>** Now lets plot the graph using ggplot **</p>
+<p>** We are just trying to plot the graph after using arrange api.**</p>
 <pre class="r"><code>ggplot()+
   # (dont do grouping or tallying))stat = identity means ggplot will do tallying for us.
-  geom_bar(data=df,aes(x=name,y=HR),color=&quot;white&quot;,fill=&quot;grey&quot;,stat = &quot;identity&quot;)+
+  geom_bar(data=df,aes(x=name,y=HR),color=&quot;white&quot;,fill=&quot;purple&quot;,stat = &quot;identity&quot;)+
   # Since the names are big and it will not fit all together, we can flip it over
   #using the below api.
   coord_flip()</code></pre>
-<p><img src="/post/2017-09-27-bar-plots_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><img src="/post/2017-09-27-bar-plots_files/figure-html/unnamed-chunk-3-1.png" width="672" /> <span style="color:red"><em>Note : The above graph is not arranged, though using arrange api. We have to factor it inorder to arrange the data.</em> text</span></p>
+<p>** Converting to factors or categorising it.**</p>
+<pre class="r"><code># In this way we get arranged graph, rather than a up and down bar graph.
+df$name&lt;-factor(df$name,levels=df$name)</code></pre>
+<p>** Now lets plot the graph using ggplot after arranging **</p>
+<pre class="r"><code>ggplot()+
+  # (dont do grouping or tallying))stat = identity means ggplot will do tallying for us.
+  geom_bar(data=df,aes(x=name,y=HR),color=&quot;white&quot;,fill=&quot;purple&quot;,stat = &quot;identity&quot;)+
+  # Since the names are big and it will not fit all together, we can flip it over
+  #using the below api.
+  coord_flip()</code></pre>
+<p><img src="/post/2017-09-27-bar-plots_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>

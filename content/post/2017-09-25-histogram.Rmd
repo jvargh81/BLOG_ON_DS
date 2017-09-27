@@ -11,6 +11,8 @@ tags:
   - lahman
 ---
 
+ <img src="images/5.jpg" width="300"/>
+
 #### Data visualization using ggplot and ggiraph.
 
 _Using ggplot, we can display the data using graphs. In this post we will 
