@@ -53,7 +53,7 @@ ggplot()+
 
 ** Converting to factors or categorising it.**
 ```{r}
-# In this way we get arranged graph, rather than a up and down bar graph.
+# In this way we get arranged graph by leveling it w.r.t to the HR , rather than a up and down bar graph.
 df$name<-factor(df$name,levels=df$name)
 ```
 
