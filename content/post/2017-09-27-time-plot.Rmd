@@ -12,6 +12,9 @@ tags:
   - lahman
 ---
 
+
+ <img src="images/6.jpg" width="300"/>
+
 * Lets go through another kind of graph called the Time plot. 
 
 _Inserting libraries to use for the plots_
