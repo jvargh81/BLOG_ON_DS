@@ -18,7 +18,7 @@ tags:
 _Using ggplot, we can display the data using graphs. In this post we will 
 be going through histogram graph._
 
- **Let's inherit some libraries to start with**
+ * Let's inherit some libraries to start with
 
 
 ```{r message=FALSE, warning=FALSE}
@@ -31,8 +31,8 @@ library(ggiraph)
 
 ```
 
-**Histogram is used to analyse a single type of data.We can analyse one type of
-category, for example weight in this case**
+* Histogram is used to analyse a single type of data.We can analyse one type of
+category, for example weight in this case.
 
 ```{r}
 df<-Master%>%
@@ -42,7 +42,7 @@ df<-Master%>%
   
 ```
 
-** Lets plot the histogram using ggplot**
+* Lets plot the histogram using ggplot.
 
 ```{r}
 ggplot()+

@@ -18,7 +18,7 @@ draft: false
 _Using ggplot, we can display the data using graphs. This helps us to 
 visualise the data._
 
- **Let's inherit some libraries to start with**
+ * Let's inherit some libraries to start with
  
  
 ```{r message=FALSE, warning=FALSE}
@@ -35,7 +35,7 @@ library(ggiraph)
 
 
 
-** Adding a table for players with career Home run more than 400 **
+* Adding a table for players with career Home run more than 400 
 
 ```{r}
 df<-Batting%>%
@@ -46,22 +46,22 @@ df<-Batting%>%
 
 
 
-** We will now add first and last name of players instead of playerID **
+* We will now add first and last name of players instead of playerID 
 
 ```{r}
 HR_vs_SO<-inner_join(df,Master,by=c("playerID"))%>%
   select(nameFirst,nameLast,career_HR,career_SO)
 ```
 
-** Here we have first and last name, we can use paste 
-   command to join both last name and first name **
+* Here we have first and last name, we can use paste 
+   command to join both last name and first name 
 
 ```{r}
 HR_vs_SO$name<-paste(HR_vs_SO$nameFirst,HR_vs_SO$nameLast)
 
 ```
 
-** Now using ggplot we can plot the graph for the table we generated **
+* Now using ggplot we can plot the graph for the table we generated 
 
 ```{r}
 g<-ggplot()+
@@ -73,7 +73,7 @@ g<-ggplot()+
   ggiraph(code=print(g),hover_css="Fill:white;stroke:blue")
 ```
 
-** We can also do similar using the bar graph **
+* We can also do similar using the bar graph 
 
 ```{r}
 g<-ggplot(data=HR_vs_SO,aes(x=career_SO,y=career_HR,tooltip=nameLast))+

@@ -14,7 +14,7 @@ tags:
 
  <img src="images/4.jpg" width="300"/>
 
-** Lets go through another kinda of graph called the Bar graph. **
+* Lets go through another kind of graph called the Bar graph. 
 
 _Inserting libraries to use for the plots_
 ```{r message=FALSE, warning=FALSE}
@@ -25,7 +25,7 @@ library(ggiraph)
 
 ```
 
-** Lets create a table for creating a bar graph.**
+* Lets create a table for creating a bar graph.
 
 <span style="color:red"> *Note : Bar graph are also single value graphs, but we can use x axis to display name or etc of that kind.* text</span>
 
@@ -34,12 +34,12 @@ df<-Teams%>%
   #filtering all the data for 1980 
   filter(yearID == 1980)%>%
   select(name,HR)%>%
-  #Arranging all data in asscending order, but we have to factor it 
+  #Arranging all data in asscending order w.r.t HR, but we have to factor the level
   #inorder to display on the bargraph.
   arrange(HR)
 ```
 
-** We are just trying to plot the graph after using arrange api.**
+* We are just trying to plot the graph after using arrange api.Before factoring
 
 ```{r}
 ggplot()+
@@ -51,22 +51,29 @@ ggplot()+
 ```
 <span style="color:red">*Note : The above graph is not arranged, though using arrange api. We have to factor it inorder to arrange the data.* text</span>
 
-** Converting to factors or categorising it.**
+* Converting to factors or categorising it.*
 ```{r}
-# In this way we get arranged graph, rather than a up and down bar graph.
+# In this way we get arranged graph by leveling it w.r.t to the HR.
 df$name<-factor(df$name,levels=df$name)
 ```
 
 
-** Now lets plot the graph using ggplot after arranging **
+* Now lets plot the graph using ggplot after arranging. After Factoring.
 
 ```{r}
-ggplot()+
+g<-ggplot()+
   # (dont do grouping or tallying))stat = identity means ggplot will do tallying for us.
   geom_bar(data=df,aes(x=name,y=HR),color="white",fill="purple",stat = "identity")+
   # Since the names are big and it will not fit all together, we can flip it over
   #using the below api.
-  coord_flip()
+  coord_flip()+
+
+  ggtitle("1980 Team Homeruns")
+  ylab("Homeruns")
+  xlab("Team")
+  
+  
+  ggiraph(code=print(g),hover_css = "fill:red;stroke:white")
 ```
 
 

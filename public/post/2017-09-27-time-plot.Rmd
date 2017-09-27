@@ -1,0 +1,45 @@
+---
+title: Time plot
+author: Jerrin Joe Varghese
+date: '2017-09-27'
+slug: time-plot
+categories:
+  - Data visualization
+tags:
+  - dplyr
+  - ggiraph
+  - ggplot
+  - lahman
+---
+
+* Lets go through another kind of graph called the Time plot. 
+
+_Inserting libraries to use for the plots_
+
+```{r message=FALSE, warning=FALSE}
+library(Lahman)
+library(dplyr)
+library(ggplot2)
+library(ggiraph)
+```
+
+
+* Lets store some exavt data to data frame. 
+
+```{r}
+df<-Batting%>%
+  filter(playerID=='ruthba01')%>%
+  select(yearID,HR)
+```
+
+
+* Lets plot the graph using the data using ggplot. 
+
+```{r}
+g<-ggplot()+
+  geom_line(data=df,aes(x=yearID,y=HR))+
+  geom_point_interactive(data=df,aes(x=yearID,y=HR,tooltip=HR,data_id=yearID))
+
+ggiraph(code=print(g),hover_css="fill:white;stroke:red")
+```
+
