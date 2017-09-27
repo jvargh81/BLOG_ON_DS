@@ -1,0 +1,41 @@
+---
+title: Bar_Plots
+author: Jerrin Joe Varghese
+date: '2017-09-27'
+slug: bar-plots
+categories:
+  - Data visualization
+tags:
+  - dplyr
+  - ggiraph
+  - ggplot
+  - lahman
+---
+
+
+
+<p>** Lets go through another kinda of graph called the Bar graph. **</p>
+<p><em>Inserting libraries to use for the plots</em></p>
+<pre class="r"><code>library(Lahman)
+library(dplyr)
+library(ggplot2)
+library(ggiraph)</code></pre>
+<p>** Lets create a table for creating a bar graph.**</p>
+<p><span style="color:red"> <em>Note : Bar graph are also single value graphs, but we can use x axis to display name or etc of that kind.</em> text</span></p>
+<pre class="r"><code>df&lt;-Teams%&gt;%
+  #filtering all the data for 1980 
+  filter(yearID == 1980)%&gt;%
+  select(name,HR)%&gt;%
+  #Arranging all data in asscending order, but we have to factor it 
+  #inorder to display on the bargraph.
+  arrange(HR)</code></pre>
+<p>** Converting to factors or categorising it.**</p>
+<pre class="r"><code>df$name&lt;-factor(df$name,levels=df$name)</code></pre>
+<p>** Now lets plot the graph using ggplot **</p>
+<pre class="r"><code>ggplot()+
+  # (dont do grouping or tallying))stat = identity means ggplot will do tallying for us.
+  geom_bar(data=df,aes(x=name,y=HR),color=&quot;white&quot;,fill=&quot;grey&quot;,stat = &quot;identity&quot;)+
+  # Since the names are big and it will not fit all together, we can flip it over
+  #using the below api.
+  coord_flip()</code></pre>
+<p><img src="/post/2017-09-27-bar-plots_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>

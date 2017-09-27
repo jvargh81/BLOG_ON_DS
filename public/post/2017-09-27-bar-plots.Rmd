@@ -1,0 +1,59 @@
+---
+title: Bar_Plots
+author: Jerrin Joe Varghese
+date: '2017-09-27'
+slug: bar-plots
+categories:
+  - Data visualization
+tags:
+  - dplyr
+  - ggiraph
+  - ggplot
+  - lahman
+---
+
+** Lets go through another kinda of graph called the Bar graph. **
+
+_Inserting libraries to use for the plots_
+```{r message=FALSE, warning=FALSE}
+library(Lahman)
+library(dplyr)
+library(ggplot2)
+library(ggiraph)
+
+```
+
+** Lets create a table for creating a bar graph.**
+
+<span style="color:red"> *Note : Bar graph are also single value graphs, but we can use x axis to display name or etc of that kind.* text</span>
+
+```{r}
+df<-Teams%>%
+  #filtering all the data for 1980 
+  filter(yearID == 1980)%>%
+  select(name,HR)%>%
+  #Arranging all data in asscending order, but we have to factor it 
+  #inorder to display on the bargraph.
+  arrange(HR)
+```
+
+** Converting to factors or categorising it.**
+```{r}
+df$name<-factor(df$name,levels=df$name)
+```
+
+
+** Now lets plot the graph using ggplot **
+
+```{r}
+ggplot()+
+  # (dont do grouping or tallying))stat = identity means ggplot will do tallying for us.
+  geom_bar(data=df,aes(x=name,y=HR),color="white",fill="grey",stat = "identity")+
+  # Since the names are big and it will not fit all together, we can flip it over
+  #using the below api.
+  coord_flip()
+```
+
+
+
+
