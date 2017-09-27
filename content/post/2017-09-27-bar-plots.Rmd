@@ -34,12 +34,12 @@ df<-Teams%>%
   #filtering all the data for 1980 
   filter(yearID == 1980)%>%
   select(name,HR)%>%
-  #Arranging all data in asscending order, but we have to factor it 
+  #Arranging all data in asscending order w.r.t HR, but we have to factor the level
   #inorder to display on the bargraph.
   arrange(HR)
 ```
 
-** We are just trying to plot the graph after using arrange api.**
+** We are just trying to plot the graph after using arrange api.Before factoring**
 
 ```{r}
 ggplot()+
@@ -58,7 +58,7 @@ df$name<-factor(df$name,levels=df$name)
 ```
 
 
-** Now lets plot the graph using ggplot after arranging **
+** Now lets plot the graph using ggplot after arranging. After Factoring. **
 
 ```{r}
 ggplot()+
