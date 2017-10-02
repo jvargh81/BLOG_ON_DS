@@ -61,19 +61,17 @@ df$name<-factor(df$name,levels=df$name)
 * Now lets plot the graph using ggplot after arranging. After Factoring.
 
 ```{r}
-g<-ggplot()+
+ggplot()+
   # (dont do grouping or tallying))stat = identity means ggplot will do tallying for us.
   geom_bar(data=df,aes(x=name,y=HR),color="white",fill="purple",stat = "identity")+
   # Since the names are big and it will not fit all together, we can flip it over
   #using the below api.
   coord_flip()+
 
-  ggtitle("1980 Team Homeruns")
-  ylab("Homeruns")
+  ggtitle("1980 Team Homeruns")+
+  ylab("Homeruns")+
   xlab("Team")
   
-  
-  ggiraph(code=print(g),hover_css = "fill:red;stroke:white")
 ```
 
 

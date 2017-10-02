@@ -39,10 +39,9 @@ df<-Batting%>%
 * Lets plot the graph using the data using ggplot. 
 
 ```{r}
-g<-ggplot()+
+ggplot()+
   geom_line(data=df,aes(x=yearID,y=HR))+
   geom_point_interactive(data=df,aes(x=yearID,y=HR,tooltip=HR,data_id=yearID))
 
-ggiraph(code=print(g),hover_css="fill:white;stroke:red")
 ```
 

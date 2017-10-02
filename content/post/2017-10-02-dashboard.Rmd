@@ -1,0 +1,81 @@
+---
+title: Dashboard
+author: Jerrin Joe Varghese
+date: '2017-10-02'
+slug: dashboard
+categories:
+  - Data visualization
+tags:
+  - dplyr
+  - ggiraph
+  - ggplot
+  - lahman
+---
+
+#Dashboards
+
+#### To use Dashboard, we also have to use one more package called 'flexdashboard': 
+
+
+
+* Using Dashboards we can plot different graphs together.
+
+_Lets plot some graphs for using it in the Dashboard._
+
+First graph
+
+#extracting the data I want.
+```{r}
+result<-Batting%>%
+  filter(playerID=='ruthba01')%>%
+  select(yearID,SO,HR)
+```
+
+
+* Lets plot first graph based on Strike out and Homeruns
+
+_ visualize the data using scatter plot._
+```{r}
+ggplot()+
+  geom_point(data=result,aes(x=SO,y=HR))+
+  xlab("Strike outs")+
+  ylab("Homeruns")
+```
+
+
+* Lets plot second graph based on Homeruns
+_ visualize the data using Line plot._
+```{r}
+ggplot()+
+  geom_histogram(data=result,aes(x=HR),color='white',bins=15)+
+  xlab("Homeruns")
+```
+
+
+  
+* Lets plot third graph based on Homeruns and yearID.
+_ visualize the data using point and line
+plot._
+```{r}
+ggplot()+
+  geom_point(data=result,aes(x=yearID,y=HR))+
+  geom_line(data=result,aes(x=yearID,y=HR))+
+  xlab("Year")+
+  ylab("Homeruns")
+
+```
+
+
+
+
+* If we need to use side bar, then we have to use below code for doing that
+
+Inputs {.sidebar}
+---------------------------------------------------------
+Babe Ruth was a power hitter for the New York Yankee's in the 20's and 30's.
+He held the record for most homeruns hit in a season until the 60's.
+
+#### To checkout the dashboard, Please go to below link :
+
+
+
