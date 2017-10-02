@@ -76,6 +76,5 @@ Babe Ruth was a power hitter for the New York Yankee's in the 20's and 30's.
 He held the record for most homeruns hit in a season until the 60's.
 
 #### To checkout the dashboard, Please go to below link :
-
-
+https://github.com/jvargh81/BLOG_ON_DS/blob/master/content/post/index.html
 
