@@ -1,5 +1,5 @@
 ---
-title: Dashboard
+title: Dash board
 author: Jerrin Joe Varghese
 date: '2017-10-02'
 slug: dashboard
@@ -12,9 +12,7 @@ tags:
   - lahman
 ---
 
-### Dashboards
-
-#### To use Dashboard, we also have to use one more package called 'flexdashboard': 
+##### To use Dashboard, we also have to use one more package called 'flexdashboard': 
 
 
 
