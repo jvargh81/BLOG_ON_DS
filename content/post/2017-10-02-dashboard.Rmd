@@ -12,7 +12,7 @@ tags:
   - lahman
 ---
 
-#Dashboards
+### Dashboards
 
 #### To use Dashboard, we also have to use one more package called 'flexdashboard': 
 
@@ -22,7 +22,7 @@ tags:
 
 _Lets plot some graphs for using it in the Dashboard._
 
-# Adding Librarys
+### Adding Librarys
 ```{r}
 library(flexdashboard)
 library(Lahman)
@@ -31,7 +31,7 @@ library(ggplot2)
 ```
 
 
-#extracting the data I want.
+### Extracting the data I want.
 ```{r}
 result<-Batting%>%
   filter(playerID=='ruthba01')%>%
@@ -85,5 +85,5 @@ ggplot()+
 
 
 #### To checkout the dashboard, Please go to below link :
-https://github.com/jvargh81/BLOG_ON_DS/blob/master/content/post/index.html
+ https://jvargh81.github.io/Dashboard/
 
