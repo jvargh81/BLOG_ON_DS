@@ -21,7 +21,7 @@ tags:
 _Lets plot some graphs for using it in the Dashboard._
 
 ### Adding Librarys
-```{r}
+```{r message=FALSE, warning=FALSE}
 library(flexdashboard)
 library(Lahman)
 library(dplyr)
